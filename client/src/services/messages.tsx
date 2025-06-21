@@ -8,7 +8,6 @@ const BASE_URL = process.env.REACT_APP_BASE_URL + "api/messages";
 export const getMessages = async (
   page: number
 ): Promise<ResponseDTO<Message>> => {
-  console.log(BASE_URL);
   const response = await fetch(`${BASE_URL}?page=${page || 1}`);
   const data = await response.json();
   const messages: Message[] = data.data.data.map((msg: any) => ({
