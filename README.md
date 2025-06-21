@@ -53,7 +53,7 @@ git --version
     HOST=127.0.0.1 (your localhost)
     USER=root
     PASSWORD=YOUR_PASSWORD (you should type root user password)
-    DATABASE=guestbook_db```
+    DATABASE=guestbook_db
 - start server by **command**: `npm run dev`
 
 
@@ -71,7 +71,9 @@ Open new cmd or PowerShell window
 
 - Add your configuration into **.env file**:
     `REACT_APP_BASE_URL=http://localhost:8080/`
+  
 NOTE: Make sure that your server is running on localhost port 8080
+
 - start frontend by **command**: `npm start`
 
 
