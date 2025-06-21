@@ -40,8 +40,9 @@ git --version
 - Run the .sql script: SOURCE guestbook.sql; If it does not work, copy the script and run in MySQL workbanch
 ```
 
-```
+
 ## 3. Backend - Node.js Server
+```
 - cd server - locate to the server folder
 - npm install
 - create .env file with command: touch .env
@@ -54,8 +55,9 @@ DATABASE=guestbook_db
     npm run dev
 ```
 
-```
+
 ## 4. Frontend - ReactApp
+```
 - ../client - locate to the client folder
 - npm install
 - create .env file and add this line into .env
@@ -65,8 +67,9 @@ NOTE: Make sure that your server is running on localhost port 8080
     npm start
 ```
 
-```
+
 ## 5. Application works
+```
     Frontend → http://localhost:3000
     Backend API → http://localhost:8080
 ```
