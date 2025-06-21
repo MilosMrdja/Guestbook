@@ -4,7 +4,7 @@ USE guestbook_db;
 DROP TABLE IF EXISTS messages;
 
 CREATE TABLE messages(
-    id integer PRIMARY KEY AUTO_INCREMENT,
+    id integer AUTO_INCREMENT PRIMARY KEY,
     userName VARCHAR(30) NOT NULL,
     content VARCHAR(80) NOT NULL,
     created DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
@@ -21,4 +21,4 @@ INSERT INTO messages (userName, content) VALUES
 ('Petar', 'Finally something usefull.'),
 ('Luka', 'Excellent design!'),
 ('Tamara', 'Testing message, it works.'),
-('Nikola', 'Empty message'),
+('Nikola', 'Empty message');
