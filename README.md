@@ -40,35 +40,40 @@ git --version
   ```sql
   SOURCE server/schema.sql;
 
-
-
 ## 3. Backend - Node.js Server
-```
-- locate to the server folder by **command**: cd server
-- type **command**: npm install
-- create .env file by **command**: New-Item -ItemType File .env (or manually create it)
+- Locate to the server folder by **command**: `cd server`  
+- Type **command**: `npm install`  
+- Create `.env` file by **command**:  
+  ```New-Item -ItemType File .env```
+  (or manually create it)
+
+
 - Add your configuration into **.env file**:
+    ```
     HOST=127.0.0.1 (your localhost)
     USER=root
     PASSWORD=YOUR_PASSWORD (you should type root user password)
-    DATABASE=guestbook_db
-- start server by **command**: npm run dev
-```
+    DATABASE=guestbook_db```
+- start server by **command**: `npm run dev`
+
 
 
 ## 4. Frontend - ReactApp
-```
-Open new cmd or PowerShell window
-- locate to the client folder
-    if you are locate in guestbook/server type **command**: cd ../client
-    or in guestbook type **command**: cd client
-- type **command**: npm install
-- create .env file with **command**: New-Item -ItemType File .env (or manually create it)
+Open new cmd or PowerShell window  
+- Locate to the client folder  
+  - If you are located in `guestbook/server` type **command**: `cd ../client`  
+  - Or in `guestbook` type **command**: `cd client`  
+- Type **command**: `npm install`  
+- Create `.env` file with **command**:  
+  ```
+  New-Item -ItemType File .env```
+ (or manually create it)
+
 - Add your configuration into **.env file**:
-    REACT_APP_BASE_URL=http://localhost:8080/
+    `REACT_APP_BASE_URL=http://localhost:8080/`
 NOTE: Make sure that your server is running on localhost port 8080
-- start frontend by **command**: npm start
-```
+- start frontend by **command**: `npm start`
+
 
 
 ## 5. Application works
