@@ -39,6 +39,7 @@ git --version
 - Run the **.sql script**:  
   ```sql
   SOURCE server/schema.sql;
+- Exit form MySQL CLI by **command**: `exit`
 
 ## 3. Backend - Node.js Server
 - Locate to the server folder by **command**: `cd server`  
@@ -59,7 +60,7 @@ git --version
 
 
 ## 4. Frontend - ReactApp
-Open new cmd or PowerShell window  
+- Open new cmd or PowerShell window  
 - Locate to the client folder  
   - If you are located in `guestbook/server` type **command**: `cd ../client`  
   - Or in `guestbook` type **command**: `cd client`  
