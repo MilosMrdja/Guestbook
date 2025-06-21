@@ -36,35 +36,38 @@ git --version
 
 ```
 - Start your MySQL server.
-- Open the MySQL CLI and type mysql -u root -p
-- Run the .sql script: SOURCE schema.sql; If it does not work, copy the script and run in MySQL workbanch
+- Open the MySQL CLI or cmd and **type**: mysql -u root -p (After this, you will need type your root password)
+- Run the **.sql script**: "SOURCE server/schema.sql" If it does not work, copy the script and run in MySQL workbanch
+- exit from mysql CLI by **command**: exit
 ```
 
 
 ## 3. Backend - Node.js Server
 ```
-- cd server - locate to the server folder
-- npm install
-- create .env file with command: touch .env
-- Add your configuration:
-HOST=127.0.0.1 (your localhost)
-USER=root
-PASSWORD=YOUR_PASSWORD (you should type root user password)
-DATABASE=guestbook_db
-- start server with command:
-    npm run dev
+- locate to the server folder by **command**: cd server
+- type **command**: npm install
+- create .env file by **command**: New-Item -ItemType File .env (or manually create it)
+- Add your configuration into **.env file**:
+    HOST=127.0.0.1 (your localhost)
+    USER=root
+    PASSWORD=YOUR_PASSWORD (you should type root user password)
+    DATABASE=guestbook_db
+- start server by **command**: npm run dev
 ```
 
 
 ## 4. Frontend - ReactApp
 ```
-- ../client - locate to the client folder
-- npm install
-- create .env file and add this line into .env
+Open new cmd or PowerShell window
+- locate to the client folder
+    if you are locate in guestbook/server type **command**: cd ../client
+    or in guestbook type **command**: cd client
+- type **command**: npm install
+- create .env file with **command**: New-Item -ItemType File .env (or manually create it)
+- Add your configuration into **.env file**:
     REACT_APP_BASE_URL=http://localhost:8080/
 NOTE: Make sure that your server is running on localhost port 8080
-- start frontend with command:
-    npm start
+- start frontend by **command**: npm start
 ```
 
 
@@ -81,6 +84,9 @@ If you get database errors, make sure your .env config matches your MySQL setup.
 If you face CORS errors, check that backend uses cors() middleware.
 
 Use npm run dev in backend to auto-restart server on code changes.
+
+Note: All the following commands and instructions are intended for Windows users.
+If you are using macOS or Linux, the commands might differ (for example, use touch instead of New-Item, etc.).
 
 ## Contributors
 
