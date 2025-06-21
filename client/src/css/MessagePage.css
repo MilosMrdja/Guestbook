@@ -1,0 +1,84 @@
+.leave-message-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  font-family: Arial, sans-serif;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.form-input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.btn {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #28a745;
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #218838; 
+}
+
+.btn-secondary {
+  background-color: #ccc;
+  color: #333;
+}
+.btn-secondary:hover {
+  background-color: #b3b3b3; 
+  color: #000;             
+  cursor: pointer;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-status {
+  min-height: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.status.loading {
+  color: blue;
+}
+
+.status.success {
+  color: green;
+}
+
+.status.failed {
+  color: red;
+}
