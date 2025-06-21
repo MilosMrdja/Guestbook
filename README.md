@@ -34,39 +34,47 @@ git --version
 
 ## 2. Database Setup – MySQL
 
-```
-- Start your MySQL server.
-- Open the MySQL CLI and type mysql -u root -p
-- Run the .sql script: SOURCE guestbook.sql; If it does not work, copy the script and run in MySQL workbanch
-```
-
+- Start your MySQL server.  
+- Open the MySQL CLI or cmd and **type**: `mysql -u root -p` (After this, you will need to type your root password)  
+- Run the **.sql script**:  
+  ```sql
+  SOURCE server/schema.sql;
 
 ## 3. Backend - Node.js Server
-```
-- cd server - locate to the server folder
-- npm install
-- create .env file with command: touch .env
-- Add your configuration:
-HOST=127.0.0.1 (your localhost)
-USER=root
-PASSWORD=YOUR_PASSWORD (you should type root user password)
-DATABASE=guestbook_db
-- start server with command:
-    npm run dev
-```
+- Locate to the server folder by **command**: `cd server`  
+- Type **command**: `npm install`  
+- Create `.env` file by **command**:  
+  ```New-Item -ItemType File .env```
+  (or manually create it)
+
+
+- Add your configuration into **.env file**:
+    ```
+    HOST=127.0.0.1 (your localhost)
+    USER=root
+    PASSWORD=YOUR_PASSWORD (you should type root user password)
+    DATABASE=guestbook_db
+- start server by **command**: `npm run dev`
+
 
 
 ## 4. Frontend - ReactApp
-```
-- ../client - locate to the client folder
-- npm install
-- create .env file and add this line into .env
-    REACT_APP_BASE_URL=http://localhost:8080/
-NOTE: Make sure that your server is running on localhost port 8080
-- start frontend with command:
-    npm start
-```
+Open new cmd or PowerShell window  
+- Locate to the client folder  
+  - If you are located in `guestbook/server` type **command**: `cd ../client`  
+  - Or in `guestbook` type **command**: `cd client`  
+- Type **command**: `npm install`  
+- Create `.env` file with **command**:  
+  ```
+  New-Item -ItemType File .env
+ (or manually create it)
 
+- Add your configuration into **.env file**:
+    `REACT_APP_BASE_URL=http://localhost:8080/`
+
+- start frontend by **command**: `npm start`
+
+  NOTE: Make sure that your server is running on localhost port 8080
 
 ## 5. Application works
 ```
@@ -81,6 +89,9 @@ If you get database errors, make sure your .env config matches your MySQL setup.
 If you face CORS errors, check that backend uses cors() middleware.
 
 Use npm run dev in backend to auto-restart server on code changes.
+
+Note: All the following commands and instructions are intended for Windows users.
+If you are using macOS or Linux, the commands might differ (for example, use touch instead of New-Item, etc.).
 
 ## Contributors
 
