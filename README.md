@@ -39,9 +39,9 @@ git --version
 - npm install
 - create .env file with command: touch .env
 - Add your configuration:
-HOST=127.0.0.1
+HOST=127.0.0.1 (your localhost)
 USER=root
-PASSWORD=YOUR_PASSWORD
+PASSWORD=YOUR_PASSWORD (you should type root user password)
 DATABASE=guestbook_db
 - start server with command:
     npm run dev
