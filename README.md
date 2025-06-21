@@ -37,7 +37,7 @@ git --version
 ```
 - Start your MySQL server.
 - Open the MySQL CLI and type mysql -u root -p
-- Run the .sql script: SOURCE guestbook.sql; If it does not work, copy the script and run in MySQL workbanch
+- Run the .sql script: SOURCE schema.sql; If it does not work, copy the script and run in MySQL workbanch
 ```
 
 
