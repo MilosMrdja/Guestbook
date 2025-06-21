@@ -66,17 +66,15 @@ Open new cmd or PowerShell window
 - Type **command**: `npm install`  
 - Create `.env` file with **command**:  
   ```
-  New-Item -ItemType File .env```
+  New-Item -ItemType File .env
  (or manually create it)
 
 - Add your configuration into **.env file**:
     `REACT_APP_BASE_URL=http://localhost:8080/`
-  
-NOTE: Make sure that your server is running on localhost port 8080
 
 - start frontend by **command**: `npm start`
 
-
+  NOTE: Make sure that your server is running on localhost port 8080
 
 ## 5. Application works
 ```
