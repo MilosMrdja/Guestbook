@@ -32,7 +32,7 @@ git --version
 2. Database Setup – MySQL
 - Start your MySQL server.
 - Open the MySQL CLI and type mysql -u root -p
-- Run the .sql script: SOURCE guestbook.sql;
+- Run the .sql script: SOURCE guestbook.sql; If it does not work, copy the script and run in MySQL workbanch
 
 3. Backend - Node.js Server
 - cd server - locate to the server folder
