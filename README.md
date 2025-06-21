@@ -34,12 +34,12 @@ git --version
 
 ## 2. Database Setup – MySQL
 
-```
-- Start your MySQL server.
-- Open the MySQL CLI or cmd and **type**: mysql -u root -p (After this, you will need type your root password)
-- Run the **.sql script**: "SOURCE server/schema.sql" If it does not work, copy the script and run in MySQL workbanch
-- exit from mysql CLI by **command**: exit
-```
+- Start your MySQL server.  
+- Open the MySQL CLI or cmd and **type**: `mysql -u root -p` (After this, you will need to type your root password)  
+- Run the **.sql script**:  
+  ```sql
+  SOURCE server/schema.sql;
+
 
 
 ## 3. Backend - Node.js Server
